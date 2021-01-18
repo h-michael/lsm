@@ -1,0 +1,15 @@
+[package]
+name = "lsm"
+version = "0.1.0"
+authors = ["Hirokazu Hata <h.hata.ai.t@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = { version = "1.0" }
+url = { version = "2.2.0" }
+reqwest = { version = "0.11", features = ["blocking", "json"] }
+tokio = { version = "1", features = ["full"] }
+bytes = { version = "1.0.1" }
